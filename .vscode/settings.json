@@ -11,5 +11,30 @@
             "other": "off"
         },
         "editor.minimap.enabled": false
-    }
+    },
+    "frontMatter.framework.id": "hugo",
+    "frontMatter.content.publicFolder": "static",
+    "frontMatter.preview.host": "http://localhost:1313",
+    "frontMatter.content.pageFolders": [
+        {
+            "title": "tags",
+            "path": "[[workspace]]/content/tags"
+        },
+        {
+            "path": "[[workspace]]/content/resume"
+        },
+        {
+            "title": "links",
+            "path": "[[workspace]]/content/links"
+        },
+        {
+            "title": "categories",
+            "path": "[[workspace]]/content/categories"
+        },
+        {
+            "title": "blog",
+            "path": "[[workspace]]/content/blog"
+        }
+    ],
+    "frontMatter.git.enabled": true
 }
