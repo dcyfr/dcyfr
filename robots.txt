@@ -1,8 +1,0 @@
----
-layout: none
-permalink: .well-known/robots.txt
----
-User-agent: *
-Allow: /
-
-Sitemap: https://drew.x64.onl/sitemap.xml

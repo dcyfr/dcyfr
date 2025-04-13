@@ -5,8 +5,8 @@ params:
     name: "Drew"
     email: "drew@x64.onl"
     url: "https://cyberdrew.onl"
-  description: "Aloha World! I'm Drew, security architect and independent researcher. Welcome to my lab, a place where I tinker, explore, and reflect."
-  keywords: "tech, cyber, security, philosophy, ethics, philanthropy"
+  description: "I'm a security architect and independent researcher who loves bringing people and technology together to solve complex problems."
+  keywords: "tech, cyber, security, philosophy, ethics"
 rssLimit: 25
 title: "Drew's Lab"
 theme: "x64"
