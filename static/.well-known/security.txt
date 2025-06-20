@@ -1,2 +1,0 @@
-Canonical: https://cyberdrew.onl/.well-known/security.txt
-Contact: mailto:drew@cyberindie.com

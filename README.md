@@ -1,1 +1,7 @@
-Made with &hearts; CO, USA
+# Hi, I'm Drew 👋
+
+Welcome to my GitHub profile!
+
+## 📈 GitHub Stats
+
+![Drew's GitHub stats](https://github-readme-stats.vercel.app/api?username=dcyfr&show_icons=true&theme=radical)
