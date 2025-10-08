@@ -1,6 +1,11 @@
-## Hi, I'm Drew ✦
+## Hi, I'm Drew! 👋
 
 I'm a security architect and tinkerer. I build secure systems, lead teams, and share knowledge about cybersecurity and technology.
+
+### Connect with me:
+- [Website](https://cyberdrew.dev)
+- [LinkedIn](https://www.linkedin.com/in/dcyfr/)
+- [GitHub](https://github.com/dcyfr)
 
 <!--
 **dcyfr/dcyfr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
