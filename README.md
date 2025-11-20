@@ -5,6 +5,7 @@ I'm a security architect and tinkerer. I build secure systems, lead teams, and s
 ### Connect with me:
 - [Homepage](https://cyberdrew.dev)
 - [LinkedIn](https://www.linkedin.com/in/dcyfr/)
+- [Peerlist](https://peerlist.io/dcyfr)
 - [Sponsors](https://github.com/sponsors/dcyfr)
 
 <!--
