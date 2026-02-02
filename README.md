@@ -24,10 +24,6 @@ I'm a security architect and tinkerer. I build secure systems, lead teams, and s
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Security](https://img.shields.io/badge/-Security-FF6B6B?style=flat-square&logo=shield&logoColor=white)
 
-### 📊 GitHub Stats
-
-![Drew's GitHub Stats](https://github-readme-stats.vercel.app/api?username=dcyfr&show_icons=true&theme=radical&hide_border=true&cache_seconds=86400)
-
 ### 🔭 Current Focus
 
 - Building AI-powered development tools and frameworks
