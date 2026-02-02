@@ -10,10 +10,10 @@ I'm a security architect and tinkerer. I build secure systems, lead teams, and s
 
 #### Featured Projects
 
-- **[dcyfr-labs](https://github.com/dcyfr/dcyfr-labs)** - Next.js-based platform showcasing cyber architecture and design patterns
 - **[dcyfr-ai](https://github.com/dcyfr/dcyfr-ai)** - Portable AI agent framework with plugin architecture
 - **[dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs)** - Production-ready Node.js & TypeScript starter with AI integration
 - **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)** - Experimentation sandbox for AI framework development
+- **[dcyfr-labs](https://github.com/dcyfr/dcyfr-labs)** - Next.js-based platform showcasing cyber architecture and design patterns
 
 ### 💡 Tech Stack
 
@@ -22,11 +22,11 @@ I'm a security architect and tinkerer. I build secure systems, lead teams, and s
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Security](https://img.shields.io/badge/-Security-FF6B6B?style=flat-square&logo=security&logoColor=white)
+![Security](https://img.shields.io/badge/-Security-FF6B6B?style=flat-square&logo=shield&logoColor=white)
 
 ### 📊 GitHub Stats
 
-![Drew's GitHub Stats](https://github-readme-stats.vercel.app/api?username=dcyfr)
+![Drew's GitHub Stats](https://github-readme-stats.vercel.app/api?username=dcyfr&show_icons=true&theme=radical&hide_border=true&cache_seconds=86400)
 
 ### 🔭 Current Focus
 
