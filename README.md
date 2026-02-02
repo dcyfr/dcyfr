@@ -26,7 +26,7 @@ I'm a security architect and tinkerer. I build secure systems, lead teams, and s
 
 ### 📊 GitHub Stats
 
-![Drew's GitHub Stats](https://github-readme-stats.vercel.app/api?username=dcyfr&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9)
+![Drew's GitHub Stats](https://github-readme-stats.vercel.app/api?username=dcyfr)
 
 ### 🔭 Current Focus
 
