@@ -1,23 +1,32 @@
 # Hi, I'm Drew! 👋
 
-## Cyber Architect | Security Engineer | Builder
+## Cybersecurity Architect | Information Security Engineer | Builder
 
-I'm a security architect and tinkerer. I build secure systems, lead teams, and share knowledge about cybersecurity and technology.
+I'm Drew, also known as **dcyfr** in developer and cybersecurity communities. I specialize in designing secure systems and building modern agentic tools that enhance development workflows.
+
 
 ### 🚀 What I'm Building
 
-**DCYFR Labs** - A virtual partnership dedicated to building secure, innovative solutions for the modern web focusing on cyber architecture and design.
+**DCYFR** - A virtual partnership dedicated to building secure, innovative solutions for the modern web focusing on cyber architecture and design.
 
 #### Featured Projects
 
-- **[dcyfr-ai](https://github.com/dcyfr/dcyfr-ai)** - Portable AI agent framework with plugin architecture
-- **[dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs)** - Production-ready Node.js & TypeScript starter with AI integration
-- **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)** - Experimentation sandbox for AI framework development
 - **[dcyfr-labs](https://github.com/dcyfr/dcyfr-labs)** - Next.js-based platform showcasing cyber architecture and design patterns
+
+##### The DCYFR.AI Framework
+
+- **[dcyfr-ai](https://github.com/dcyfr/dcyfr-ai)** - Portable AI agent framework with plugin architecture
+- **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)** - Experimentation sandbox for AI framework development
+
+##### DCYFR.AI Project Templates
+
+- **[dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs)** - Production-ready Node.js & TypeScript starter with AI integration
 
 ### 💡 Tech Stack
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
