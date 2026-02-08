@@ -1,40 +1,40 @@
 # Hi, I'm Drew! 👋
 
-## Cybersecurity Architect | Information Security Engineer | Builder
+## Cyber Architect | Security Engineer | Agentic Builder
 
-I'm Drew, also known as **dcyfr** in developer and cybersecurity communities. I specialize in designing secure systems and building modern agentic tools that enhance development workflows.
+I'm Drew, also known as **dcyfr** across developer and cybersecurity communities. I specialize in designing secure systems and building modern agentic tools that enhance development workflows.
 
 ### 🚀 What I'm Building
 
-**[DCYFR](https://www.dcyfr.ai)** — A virtual partnership dedicated to building secure, innovative solutions for the modern web focusing on cyber architecture and design.
+**[DCYFR](https://www.dcyfr.ai)**: A virtual partnership dedicated to building secure, innovative solutions for the modern web focusing on cyber architecture and design.
 
 #### Featured Projects
 
-- **[dcyfr-labs](https://github.com/dcyfr/dcyfr-labs)** — Modern developer blog & portfolio ([dcyfr.ai](https://www.dcyfr.ai)) built with Next.js, MDX, Redis analytics, and Inngest background jobs
+- **[dcyfr-labs](https://github.com/dcyfr/dcyfr-labs)**: Modern developer blog & portfolio ([dcyfr.ai](https://www.dcyfr.ai)) built with Next.js, MDX, Redis analytics, and Inngest background jobs
 
 ##### The DCYFR.AI Framework
 
-- **[dcyfr-ai](https://github.com/dcyfr/dcyfr-ai)** — Portable AI agent framework with plugin architecture, multi-provider integration, and telemetry
-- **[dcyfr-ai-rag](https://github.com/dcyfr/dcyfr-ai-rag)** — RAG framework for Node.js/TypeScript with document loading, embeddings, and vector stores
-- **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)** — Experimentation sandbox for testing and benchmarking the @dcyfr/ai framework
+- **[dcyfr-ai](https://github.com/dcyfr/dcyfr-ai)**: Portable AI agent framework with plugin architecture, multi-provider integration, and telemetry
+- **[dcyfr-ai-rag](https://github.com/dcyfr/dcyfr-ai-rag)**: RAG framework for Node.js/TypeScript with document loading, embeddings, and vector stores
+- **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)**: Experimentation sandbox for testing and benchmarking the @dcyfr/ai framework
 
 ##### Developer Tools
 
-- **[dcyfr-ai-cli](https://github.com/dcyfr/dcyfr-ai-cli)** — Cross-platform command-line interface for the DCYFR AI framework
-- **[dcyfr-ai-code-gen](https://github.com/dcyfr/dcyfr-ai-code-gen)** — AI-powered code generation toolkit with AST manipulation and template engine
-- **[dcyfr-ai-kubernetes](https://github.com/dcyfr/dcyfr-ai-kubernetes)** — Kubernetes deployment toolkit for generating, validating, and managing K8s manifests
-- **[dcyfr-ai-notebooks](https://github.com/dcyfr/dcyfr-ai-notebooks)** — Data science notebook toolkit for TypeScript with data pipeline and visualization support
+- **[dcyfr-ai-cli](https://github.com/dcyfr/dcyfr-ai-cli)**: Cross-platform command-line interface for the DCYFR AI framework
+- **[dcyfr-ai-code-gen](https://github.com/dcyfr/dcyfr-ai-code-gen)**: AI-powered code generation toolkit with AST manipulation and template engine
+- **[dcyfr-ai-kubernetes](https://github.com/dcyfr/dcyfr-ai-kubernetes)**: Kubernetes deployment toolkit for generating, validating, and managing K8s manifests
+- **[dcyfr-ai-notebooks](https://github.com/dcyfr/dcyfr-ai-notebooks)**: Data science notebook toolkit for TypeScript with data pipeline and visualization support
 
 ##### Project Templates
 
-- **[dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents)** — Starter template for autonomous AI agents with tool usage, memory, and observability
-- **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api)** — Production-ready REST API starter with Express 5, Drizzle ORM, JWT auth, and OpenAPI
-- **[dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)** — Conversational AI chatbot template with multi-turn conversations and streaming
-- **[dcyfr-ai-docker](https://github.com/dcyfr/dcyfr-ai-docker)** — Docker containerization templates with multi-stage builds and security hardening
-- **[dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql)** — GraphQL API server template with Apollo Server 4 and real-time subscriptions
-- **[dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs)** — Production-ready Node.js/TypeScript web server starter with AI integration
-- **[dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react)** — React SPA starter with Vite, TanStack Router/Query, Zustand, and Tailwind CSS
-- **[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)** — Full-stack Next.js web application template with App Router and Drizzle ORM
+- **[dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents)**: Starter template for autonomous AI agents with tool usage, memory, and observability
+- **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api)**: Production-ready REST API starter with Express 5, Drizzle ORM, JWT auth, and OpenAPI
+- **[dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)**: Conversational AI chatbot template with multi-turn conversations and streaming
+- **[dcyfr-ai-docker](https://github.com/dcyfr/dcyfr-ai-docker)**: Docker containerization templates with multi-stage builds and security hardening
+- **[dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql)**: GraphQL API server template with Apollo Server 4 and real-time subscriptions
+- **[dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs)**: Production-ready Node.js/TypeScript web server starter with AI integration
+- **[dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react)**: React SPA starter with Vite, TanStack Router/Query, Zustand, and Tailwind CSS
+- **[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)**: Full-stack Next.js web application template with App Router and Drizzle ORM
 
 ### 💡 Tech Stack
 
