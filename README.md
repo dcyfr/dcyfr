@@ -48,6 +48,10 @@ I'm Drew, also known as **dcyfr** across developer and cybersecurity communities
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Security](https://img.shields.io/badge/-Security-FF6B6B?style=flat-square&logo=shield&logoColor=white)
 
+### 📊 GitHub Stats
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=dcyfr&theme=github-dark&hide_border=true&short_numbers=true&date_format=%5BY%20%5DM%20j&card_width=600&card_height=200)](https://git.io/streak-stats)
+
 ### 🔭 Current Focus
 
 - Building a portable AI agent framework and ecosystem of developer tools
@@ -69,6 +73,10 @@ I'm Drew, also known as **dcyfr** across developer and cybersecurity communities
 - System architecture & design patterns
 - TypeScript/Node.js full-stack development
 - Open source collaboration
+
+### 💼 Support My Work
+
+If you find these projects useful, consider [sponsoring on GitHub](https://github.com/sponsors/dcyfr) to support continued development. Sponsor tiers range from Community ($5/mo) to Enterprise ($200/mo) with commercial licenses and consultation hours.
 
 ---
 
