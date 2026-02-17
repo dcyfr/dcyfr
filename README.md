@@ -6,7 +6,7 @@ I'm Drew, also known as **dcyfr** across developer and cybersecurity communities
 
 ### 🚀 What I'm Building
 
-**[DCYFR](https://www.dcyfr.ai)**: A virtual partnership dedicated to building secure, innovative solutions for the modern web focusing on cyber architecture and design.
+**[DCYFR™](https://www.dcyfr.ai)**: A virtual partnership dedicated to building secure, innovative solutions for the modern web focusing on cyber architecture and design.
 
 #### Featured Projects
 
