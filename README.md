@@ -1,31 +1,31 @@
-# Hi, I'm Drew! 👋
+# Hi, I'm Drew ✨
 
-## Cyber Architect | Security Engineer | Agentic Builder
+> Cyber Architect, Security Practicioner, and Agentic Builder
 
-I'm Drew, also known as **dcyfr** across developer and cybersecurity communities. I specialize in designing secure systems and building modern agentic tools that enhance development workflows.
+I'm Drew (dcyfr), a cyber architect and builder focused on designing secure, innovative solutions for the modern web. With a passion for system architecture, threat modeling, and AI agents, I create tools and frameworks that empower developers to build with security and scalability in mind.
 
-### 🚀 What I'm Building
+## 🚀 What I'm Building
 
 **[DCYFR™](https://www.dcyfr.ai)**: A virtual partnership dedicated to building secure, innovative solutions for the modern web focusing on cyber architecture and design.
 
-#### Featured Projects
+### Featured Projects
 
 - **[dcyfr-labs](https://github.com/dcyfr/dcyfr-labs)**: Modern developer blog & portfolio ([dcyfr.ai](https://www.dcyfr.ai)) built with Next.js, MDX, Redis analytics, and Inngest background jobs
 
-##### The DCYFR.AI Framework
+#### The DCYFR.AI Framework
 
 - **[dcyfr-ai](https://github.com/dcyfr/dcyfr-ai)**: Portable AI agent framework with plugin architecture, multi-provider integration, and telemetry
 - **[dcyfr-ai-rag](https://github.com/dcyfr/dcyfr-ai-rag)**: RAG framework for Node.js/TypeScript with document loading, embeddings, and vector stores
 - **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)**: Experimentation sandbox for testing and benchmarking the @dcyfr/ai framework
 
-##### Developer Tools
+#### Developer Tools
 
 - **[dcyfr-ai-cli](https://github.com/dcyfr/dcyfr-ai-cli)**: Cross-platform command-line interface for the DCYFR AI framework
 - **[dcyfr-ai-code-gen](https://github.com/dcyfr/dcyfr-ai-code-gen)**: AI-powered code generation toolkit with AST manipulation and template engine
 - **[dcyfr-ai-kubernetes](https://github.com/dcyfr/dcyfr-ai-kubernetes)**: Kubernetes deployment toolkit for generating, validating, and managing K8s manifests
 - **[dcyfr-ai-notebooks](https://github.com/dcyfr/dcyfr-ai-notebooks)**: Data science notebook toolkit for TypeScript with data pipeline and visualization support
 
-##### Project Templates
+#### Project Templates
 
 - **[dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents)**: Starter template for autonomous AI agents with tool usage, memory, and observability
 - **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api)**: Production-ready REST API starter with Express 5, Drizzle ORM, JWT auth, and OpenAPI
@@ -36,7 +36,7 @@ I'm Drew, also known as **dcyfr** across developer and cybersecurity communities
 - **[dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react)**: React SPA starter with Vite, TanStack Router/Query, Zustand, and Tailwind CSS
 - **[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)**: Full-stack Next.js web application template with App Router and Drizzle ORM
 
-### 💡 Tech Stack
+## 💡 Tech Stack
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
@@ -48,25 +48,25 @@ I'm Drew, also known as **dcyfr** across developer and cybersecurity communities
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Security](https://img.shields.io/badge/-Security-FF6B6B?style=flat-square&logo=shield&logoColor=white)
 
-### 📊 GitHub Stats
+## 📊 GitHub Stats
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=dcyfr&theme=github-dark&hide_border=true&short_numbers=true&date_format=%5BY%20%5DM%20j&card_width=600&card_height=200)](https://git.io/streak-stats)
 
-### 🔭 Current Focus
+## 🔭 Current Focus
 
 - Building a portable AI agent framework and ecosystem of developer tools
 - Designing production-ready project templates for modern full-stack development
 - Exploring RAG, code generation, and agentic AI patterns
 - Contributing to open-source security and development tooling
 
-### 🤝 Connect With Me
+## 🤝 Connect With Me
 
 [![Homepage](https://img.shields.io/badge/-dcyfr.ai-000000?style=flat-square&logo=google-chrome&logoColor=white)](https://www.dcyfr.ai)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dcyfr/)
 [![Peerlist](https://img.shields.io/badge/-Peerlist-00AA45?style=flat-square&logo=peerlist&logoColor=white)](https://peerlist.io/dcyfr)
 [![Sponsors](https://img.shields.io/badge/-Sponsor-EA4AAA?style=flat-square&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dcyfr)
 
-### 💬 Let's Talk About
+## 💬 Let's Talk About
 
 - Cybersecurity & threat modeling
 - AI agents, RAG, and code generation
@@ -74,7 +74,7 @@ I'm Drew, also known as **dcyfr** across developer and cybersecurity communities
 - TypeScript/Node.js full-stack development
 - Open source collaboration
 
-### 💼 Support My Work
+## 💼 Support My Work
 
 If you find these projects useful, consider [sponsoring on GitHub](https://github.com/sponsors/dcyfr) to support continued development. Sponsor tiers range from Community ($5/mo) to Enterprise ($200/mo) with commercial licenses and consultation hours.
 
