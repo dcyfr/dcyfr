@@ -8,33 +8,80 @@ I'm Drew (dcyfr), a cyber architect and builder focused on designing secure, inn
 
 **[DCYFR™](https://www.dcyfr.ai)**: A virtual partnership dedicated to building secure, innovative solutions for the modern web focusing on cyber architecture and design.
 
-### Featured Projects
+---
 
-- **[dcyfr-labs](https://github.com/dcyfr/dcyfr-labs)**: Modern developer blog & portfolio ([dcyfr.ai](https://www.dcyfr.ai)) built with Next.js, MDX, Redis analytics, and Inngest background jobs
+## ⚡ Quick Start - Pick Your Path
 
-#### The DCYFR.AI Framework
+**New to DCYFR?** Choose what you want to build:
 
-- **[dcyfr-ai](https://github.com/dcyfr/dcyfr-ai)**: Portable AI agent framework with plugin architecture, multi-provider integration, and telemetry
-- **[dcyfr-ai-rag](https://github.com/dcyfr/dcyfr-ai-rag)**: RAG framework for Node.js/TypeScript with document loading, embeddings, and vector stores
-- **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)**: Experimentation sandbox for testing and benchmarking the @dcyfr/ai framework
+| I want to... | Use this template | Time to first run |
+|--------------|-------------------|-------------------|
+| **Build a portfolio/blog** | [dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web) | <30 seconds |
+| **Build a React SPA** | [dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react) | <30 seconds |
+| **Create AI agents** | [@dcyfr/ai](https://github.com/dcyfr/dcyfr-ai) + [dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents) | <30 seconds |
+| **Build a REST API** | [dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api) | <30 seconds |
+| **Build a GraphQL API** | [dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql) | <30 seconds |
+| **Build a chatbot** | [dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot) | <30 seconds |
 
-#### Developer Tools
+💡 **Want to see production examples?** Check out [dcyfr-labs](https://github.com/dcyfr/dcyfr-labs) for reference architecture (not a template)
 
-- **[dcyfr-ai-cli](https://github.com/dcyfr/dcyfr-ai-cli)**: Cross-platform command-line interface for the DCYFR AI framework
-- **[dcyfr-ai-code-gen](https://github.com/dcyfr/dcyfr-ai-code-gen)**: AI-powered code generation toolkit with AST manipulation and template engine
-- **[dcyfr-ai-kubernetes](https://github.com/dcyfr/dcyfr-ai-kubernetes)**: Kubernetes deployment toolkit for generating, validating, and managing K8s manifests
-- **[dcyfr-ai-notebooks](https://github.com/dcyfr/dcyfr-ai-notebooks)**: Data science notebook toolkit for TypeScript with data pipeline and visualization support
+---
 
-#### Project Templates
+## 🏗️ The DCYFR Ecosystem
 
-- **[dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents)**: Starter template for autonomous AI agents with tool usage, memory, and observability
-- **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api)**: Production-ready REST API starter with Express 5, Drizzle ORM, JWT auth, and OpenAPI
-- **[dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)**: Conversational AI chatbot template with multi-turn conversations and streaming
-- **[dcyfr-ai-docker](https://github.com/dcyfr/dcyfr-ai-docker)**: Docker containerization templates with multi-stage builds and security hardening
-- **[dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql)**: GraphQL API server template with Apollo Server 4 and real-time subscriptions
-- **[dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs)**: Production-ready Node.js/TypeScript web server starter with AI integration
-- **[dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react)**: React SPA starter with Vite, TanStack Router/Query, Zustand, and Tailwind CSS
-- **[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)**: Full-stack Next.js web application template with App Router and Drizzle ORM
+### Reference Implementation (Study, Don't Clone)
+
+- **[dcyfr-labs](https://github.com/dcyfr/dcyfr-labs)** ⭐ **Production Site** - My live blog & portfolio ([dcyfr.ai](https://www.dcyfr.ai)) showcasing enterprise Next.js patterns, custom design tokens, Redis analytics, and Inngest jobs
+  - 🔍 **This is NOT a template** - Highly customized for DCYFR
+  - 📖 Study the architecture and implementation patterns
+  - ✨ **Want to build your own?** Use [dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web) template instead
+
+### The DCYFR.AI Framework (npm Packages)
+
+- **[@dcyfr/ai](https://github.com/dcyfr/dcyfr-ai)** - Portable AI agent framework with plugin architecture and multi-provider integration
+- **[@dcyfr/ai-rag](https://github.com/dcyfr/dcyfr-ai-rag)** - RAG framework with document loading, embeddings, and vector stores
+- **[@dcyfr/ai-cli](https://github.com/dcyfr/dcyfr-ai-cli)** - Cross-platform CLI for DCYFR framework
+- **[@dcyfr/ai-code-gen](https://github.com/dcyfr/dcyfr-ai-code-gen)** - AI-powered code generation with AST manipulation
+- **[@dcyfr/ai-kubernetes](https://github.com/dcyfr/dcyfr-ai-kubernetes)** - K8s deployment toolkit
+- **[@dcyfr/ai-notebooks](https://github.com/dcyfr/dcyfr-ai-notebooks)** - Data science notebook toolkit for TypeScript
+
+### Production-Ready Templates (Clone & Customize)
+
+#### Backend/API Templates
+- **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api)** - REST API with Express 5, Drizzle ORM, JWT auth, OpenAPI
+- **[dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql)** - GraphQL API with Apollo Server 4, real-time subscriptions
+- **[dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs)** - Node.js/TypeScript web server starter
+
+#### Frontend/Full-Stack Templates
+- **[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)** ⭐ **Best for portfolios/blogs** - Full-stack Next.js 15 with App Router, Drizzle ORM, JWT auth
+- **[dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react)** - React 19 SPA with Vite 6, TanStack Router/Query, Zustand
+
+#### AI/Specialized Templates
+- **[dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents)** - Autonomous AI agents with tool usage, memory, observability
+- **[dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)** - Conversational AI with multi-turn conversations and streaming
+- **[dcyfr-ai-docker](https://github.com/dcyfr/dcyfr-ai-docker)** - Docker containerization with multi-stage builds and security hardening
+
+### Experimentation & Testing
+- **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)** - Testing and benchmarking playground for @dcyfr/ai framework
+
+---
+
+## 🎯 Template Selection Guide
+
+**For Portfolio/Blog Sites:**
+→ **[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)** - Full-stack Next.js with database, auth, and MDX support
+
+**For Single-Page Applications:**
+→ **[dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react)** - React SPA with modern tooling (Vite, TanStack, Zustand)
+
+**For Backend APIs:**
+→ **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api)** (REST) or **[dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql)** (GraphQL)
+
+**For AI Applications:**
+→ Start with **[@dcyfr/ai](https://github.com/dcyfr/dcyfr-ai)** framework + relevant template:
+- Chatbot? → [dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)
+- Autonomous agents? → [dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents)
+- RAG system? → Use [@dcyfr/ai-rag](https://github.com/dcyfr/dcyfr-ai-rag) package
 
 ## 💡 Tech Stack
 
@@ -74,9 +121,23 @@ I'm Drew (dcyfr), a cyber architect and builder focused on designing secure, inn
 - TypeScript/Node.js full-stack development
 - Open source collaboration
 
-## 💼 Support My Work
+## � Support My Work
 
-If you find these projects useful, consider [sponsoring on GitHub](https://github.com/sponsors/dcyfr) to support continued development. Sponsor tiers range from Community ($5/mo) to Enterprise ($200/mo) with commercial licenses and consultation hours.
+If you find these projects useful, consider [sponsoring on GitHub](https://github.com/sponsors/dcyfr) to support continued development.
+
+### Sponsor Tiers
+
+| Tier | Price | Key Benefits | Value |
+|------|-------|--------------|-------|
+| **Community** | $5/mo | Early access, Discord | Support open source |
+| **Developer** | $20/mo | Priority support, sponsor badge | Save 5-10 hours/month |
+| **Founders** | $50/mo | + Private workspace template | Save 20-30 hours/month |
+| **Executive** | $100/mo | + 2 consultation hours/month | Save 40-60 hours/month |
+| **Enterprise** | $200/mo | + Commercial license, 4 hours | Save 80-100 hours/month |
+
+**Average time saved using DCYFR templates vs building from scratch: 288-380 hours** ($28,800-$38,000 @ $100/hr)
+
+[Become a Sponsor →](https://github.com/sponsors/dcyfr)
 
 ---
 
