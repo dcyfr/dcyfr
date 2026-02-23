@@ -1,5 +1,7 @@
 # Hi, I'm Drew ✨
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dcyfr/dcyfr)
+
 > Cyber Architect, Security Practicioner, and Agentic Builder
 
 I'm Drew (dcyfr), a cyber architect and builder focused on designing secure, innovative solutions for the modern web. With a passion for system architecture, threat modeling, and AI agents, I create tools and frameworks that empower developers to build with security and scalability in mind.
