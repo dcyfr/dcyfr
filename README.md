@@ -14,18 +14,29 @@ I'm Drew (dcyfr), a cyber architect and builder focused on designing secure, inn
 
 ## ⚡ Quick Start - Pick Your Path
 
-**New to DCYFR?** Choose what you want to build:
+**New to DCYFR?** Start with the core framework or choose a template:
 
-| I want to... | Use this template | Time to first run |
-|--------------|-------------------|-------------------|
-| **Build a portfolio/blog** | [dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web) | <30 seconds |
-| **Build a React SPA** | [dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react) | <30 seconds |
-| **Create AI agents** | [@dcyfr/ai](https://github.com/dcyfr/dcyfr-ai) + [dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents) | <30 seconds |
-| **Build a REST API** | [dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api) | <30 seconds |
-| **Build a GraphQL API** | [dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql) | <30 seconds |
-| **Build a chatbot** | [dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot) | <30 seconds |
+### Core Framework (npm packages)
 
-💡 **Want to see production examples?** Check out [dcyfr-labs](https://github.com/dcyfr/dcyfr-labs) for reference architecture (not a template)
+| Package | Purpose | Install |
+|---------|---------|---------|
+| **[@dcyfr/ai](https://www.npmjs.com/package/@dcyfr/ai)** | AI agent framework | `npm install @dcyfr/ai` |
+| **[@dcyfr/ai-rag](https://www.npmjs.com/package/@dcyfr/ai-rag)** | RAG library | `npm install @dcyfr/ai-rag` |
+| **[@dcyfr/ai-code-gen](https://www.npmjs.com/package/@dcyfr/ai-code-gen)** | Code generation | `npm install @dcyfr/ai-code-gen` |
+| **[@dcyfr/ai-cli](https://www.npmjs.com/package/@dcyfr/ai-cli)** | CLI tool | `npm install -g @dcyfr/ai-cli` |
+
+### Templates (Clone & Customize)
+
+| I want to... | Use this template | Status |
+|--------------|-------------------|--------|
+| **Create AI agents** | [dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents) | ✅ Active |
+| **Build a REST API** | [dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api) | ✅ Active |
+| **Build a GraphQL API** | [dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql) | ✅ Active |
+| **Build a React SPA** | [dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react) | ✅ Active |
+| **Build a chatbot** | [dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot) | ✅ Active |
+| **Node.js starter** | [dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs) | ✅ Active |
+
+💡 **Want to see production examples?** Check out [dcyfr-labs](https://github.com/dcyfr/dcyfr-labs) for reference architecture
 
 ---
 
@@ -40,47 +51,61 @@ I'm Drew (dcyfr), a cyber architect and builder focused on designing secure, inn
 
 ### The DCYFR.AI Framework (npm Packages)
 
+**Published on npm** — Install with npm/yarn/pnpm:
+
 - **[@dcyfr/ai](https://github.com/dcyfr/dcyfr-ai)** - Portable AI agent framework with plugin architecture and multi-provider integration
+  - `npm install @dcyfr/ai` | v2.1.0+ | MIT License
 - **[@dcyfr/ai-rag](https://github.com/dcyfr/dcyfr-ai-rag)** - RAG framework with document loading, embeddings, and vector stores
-- **[@dcyfr/ai-cli](https://github.com/dcyfr/dcyfr-ai-cli)** - Cross-platform CLI for DCYFR framework
+  - `npm install @dcyfr/ai-rag`
 - **[@dcyfr/ai-code-gen](https://github.com/dcyfr/dcyfr-ai-code-gen)** - AI-powered code generation with AST manipulation
-- **[@dcyfr/ai-kubernetes](https://github.com/dcyfr/dcyfr-ai-kubernetes)** - K8s deployment toolkit
-- **[@dcyfr/ai-notebooks](https://github.com/dcyfr/dcyfr-ai-notebooks)** - Data science notebook toolkit for TypeScript
+  - `npm install @dcyfr/ai-code-gen`
+- **[@dcyfr/ai-cli](https://github.com/dcyfr/dcyfr-ai-cli)** - Cross-platform CLI for DCYFR framework
+  - `npm install -g @dcyfr/ai-cli`
+
+> **📦 Package Status:** Some packages (ai-docker, ai-web, ai-kubernetes, ai-notebooks) were deprecated in February 2026 — these are now available as templates/starter projects. See [Publishing Policy](https://github.com/dcyfr/dcyfr-workspace/blob/main/AGENTS.md#-npm-package-publishing-policy) for details.
 
 ### Production-Ready Templates (Clone & Customize)
 
+Use GitHub's "Use this template" feature or clone directly:
+
 #### Backend/API Templates
+
 - **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api)** - REST API with Express 5, Drizzle ORM, JWT auth, OpenAPI
 - **[dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql)** - GraphQL API with Apollo Server 4, real-time subscriptions
 - **[dcyfr-ai-nodejs](https://github.com/dcyfr/dcyfr-ai-nodejs)** - Node.js/TypeScript web server starter
 
 #### Frontend/Full-Stack Templates
-- **[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)** ⭐ **Best for portfolios/blogs** - Full-stack Next.js 15 with App Router, Drizzle ORM, JWT auth
+
 - **[dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react)** - React 19 SPA with Vite 6, TanStack Router/Query, Zustand
 
 #### AI/Specialized Templates
+
 - **[dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents)** - Autonomous AI agents with tool usage, memory, observability
 - **[dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)** - Conversational AI with multi-turn conversations and streaming
-- **[dcyfr-ai-docker](https://github.com/dcyfr/dcyfr-ai-docker)** - Docker containerization with multi-stage builds and security hardening
+
+#### Archived Templates
+
+These templates are deprecated but still available for reference:
+- ~~[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)~~ - Deprecated (was npm package, now template-only)
+- ~~[dcyfr-ai-docker](https://github.com/dcyfr/dcyfr-ai-docker)~~ - Deprecated (use individual templates with Docker)
 
 ### Experimentation & Testing
+
 - **[dcyfr-ai-sandbox](https://github.com/dcyfr/dcyfr-ai-sandbox)** - Testing and benchmarking playground for @dcyfr/ai framework
 
 ---
 
 ## 🎯 Template Selection Guide
 
-**For Portfolio/Blog Sites:**
-→ **[dcyfr-ai-web](https://github.com/dcyfr/dcyfr-ai-web)** - Full-stack Next.js with database, auth, and MDX support
-
 **For Single-Page Applications:**
 → **[dcyfr-ai-react](https://github.com/dcyfr/dcyfr-ai-react)** - React SPA with modern tooling (Vite, TanStack, Zustand)
 
 **For Backend APIs:**
-→ **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-ai-api)** (REST) or **[dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql)** (GraphQL)
+→ **[dcyfr-ai-api](https://github.com/dcyfr/dcyfr-api)** (REST) or **[dcyfr-ai-graphql](https://github.com/dcyfr/dcyfr-ai-graphql)** (GraphQL)
 
 **For AI Applications:**
 → Start with **[@dcyfr/ai](https://github.com/dcyfr/dcyfr-ai)** framework + relevant template:
+
 - Chatbot? → [dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)
 - Autonomous agents? → [dcyfr-ai-agents](https://github.com/dcyfr/dcyfr-ai-agents)
 - RAG system? → Use [@dcyfr/ai-rag](https://github.com/dcyfr/dcyfr-ai-rag) package
@@ -123,23 +148,9 @@ I'm Drew (dcyfr), a cyber architect and builder focused on designing secure, inn
 - TypeScript/Node.js full-stack development
 - Open source collaboration
 
-## � Support My Work
+## 💰 Support My Work
 
-If you find these projects useful, consider [sponsoring on GitHub](https://github.com/sponsors/dcyfr) to support continued development.
-
-### Sponsor Tiers
-
-| Tier | Price | Key Benefits | Value |
-|------|-------|--------------|-------|
-| **Community** | $5/mo | Early access, Discord | Support open source |
-| **Developer** | $20/mo | Priority support, sponsor badge | Save 5-10 hours/month |
-| **Founders** | $50/mo | + Private workspace template | Save 20-30 hours/month |
-| **Executive** | $100/mo | + 2 consultation hours/month | Save 40-60 hours/month |
-| **Enterprise** | $200/mo | + Commercial license, 4 hours | Save 80-100 hours/month |
-
-**Average time saved using DCYFR templates vs building from scratch: 288-380 hours** ($28,800-$38,000 @ $100/hr)
-
-[Become a Sponsor →](https://github.com/sponsors/dcyfr)
+If these projects save you time, consider [sponsoring on GitHub](https://github.com/sponsors/dcyfr). Tiers range from $5/mo (Discord access) to $200/mo (Enterprise with consultation hours). On average, DCYFR templates save 288-380 hours vs building from scratch.
 
 ---
 
