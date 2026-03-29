@@ -1,5 +1,12 @@
 # Hi, I'm Drew ✨
 
+<!-- README-META
+  tlp_clearance: GREEN
+  status: active
+  name: dcyfr
+  last_validated: 2026-03-29
+-->
+
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dcyfr/dcyfr)
 
 > Cyber Architect, Security Practicioner, and Agentic Builder
