@@ -21,23 +21,20 @@ I'm Drew (dcyfr), a cyber architect and builder focused on designing secure, inn
 
 ```mermaid
 graph TD
-    AI["@dcyfr/ai · Core Framework"]
-    CLI["@dcyfr/ai-cli · CLI"]
-    RAG["@dcyfr/ai-rag · RAG"]
-    CODEGEN["@dcyfr/ai-code-gen · Code Gen"]
-
-    AI --> CLI
-    AI --> RAG
-    AI --> CODEGEN
-
-    subgraph Plugins
-        OFFICIAL["dcyfr-plugins · Official"]
-        COMMUNITY["dcyfr-community-plugins"]
+    AI["<b>@dcyfr/ai</b><br/>Core Framework"]
+    
+    subgraph Tools["Tools & Extensions"]
+        CLI["@dcyfr/ai-cli"]
+        RAG["@dcyfr/ai-rag"]
+        CODEGEN["@dcyfr/ai-code-gen"]
     end
-    AI --> OFFICIAL
-    AI --> COMMUNITY
-
-    subgraph Templates
+    
+    subgraph Plugins["Ecosystem: Plugins"]
+        OFFICIAL["dcyfr-plugins<br/><i>Official</i>"]
+        COMMUNITY["dcyfr-community-plugins<br/><i>Community</i>"]
+    end
+    
+    subgraph Templates["Starter Templates"]
         AGENTS["dcyfr-ai-agents"]
         API["dcyfr-ai-api"]
         GRAPHQL["dcyfr-ai-graphql"]
@@ -45,21 +42,33 @@ graph TD
         CHATBOT["dcyfr-ai-chatbot"]
         NODEJS["dcyfr-ai-nodejs"]
     end
-    AI -.->|starter templates| AGENTS
-    AI -.-> API
-    AI -.-> GRAPHQL
-    AI -.-> REACT
-    AI -.-> CHATBOT
-    AI -.-> NODEJS
-
-    LABS["dcyfr-labs · dcyfr.ai"]
-    AI --> LABS
+    
+    LABS["dcyfr-labs<br/>Live: dcyfr.ai"]
     SANDBOX["dcyfr-ai-sandbox"]
+    
+    AI --> Tools
+    AI --> Plugins
+    AI -.->|scaffold| Templates
+    AI --> LABS
     AI -.-> SANDBOX
 
-    style AI fill:#4A90D9,color:#fff
+    style AI fill:#4A90D9,color:#fff,stroke:#2c5aa0,stroke-width:3px
+    style Tools fill:#E8F4F8,stroke:#5BA3E0,stroke-width:2px
+    style CLI fill:#5BA3E0,color:#fff
+    style RAG fill:#5BA3E0,color:#fff
+    style CODEGEN fill:#5BA3E0,color:#fff
+    style Plugins fill:#E8F8E8,stroke:#2ECC71,stroke-width:2px
     style OFFICIAL fill:#2ECC71,color:#fff
+    style COMMUNITY fill:#27AE60,color:#fff
+    style Templates fill:#F3E8F8,stroke:#9B59B6,stroke-width:2px
+    style AGENTS fill:#9B59B6,color:#fff
+    style API fill:#9B59B6,color:#fff
+    style GRAPHQL fill:#9B59B6,color:#fff
+    style REACT fill:#9B59B6,color:#fff
+    style CHATBOT fill:#9B59B6,color:#fff
+    style NODEJS fill:#9B59B6,color:#fff
     style LABS fill:#E67E22,color:#fff
+    style SANDBOX fill:#95A5A6,color:#fff
 ```
 
 ---
