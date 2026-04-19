@@ -1,0 +1,8 @@
+{
+  "repo_notes": [
+    {
+      "content": "Main DCYFR monorepo containing core libraries and services. Document the monorepo structure, package organization, shared tooling, inter-package dependencies, and development workflows.",
+      "author": "DCYFR Engineering"
+    }
+  ]
+}
