@@ -30,7 +30,6 @@ Most of my open work happens inside [**DCYFR Labs**](https://github.com/dcyfr-la
 - DCYFR Labs plugin ecosystem and community marketplace
 - Autonomous agent harness (`@dcyfr/ai`) — tool-use, memory, and routing
 - Cyber-architecture research published on [dcyfr.tech](https://dcyfr.tech)
-- Vault MVP at GameShark Labs
 
 ## Tech stack
 
