@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Personal/brand hub for the `dcyfr` GitHub presence. This repo is currently documentation-first and centers on the top-level ecosystem map in `README.md`.
+Personal/brand hub for the `dcyfr` GitHub presence. This repo is documentation-first: `README.md` is the GitHub profile page rendered at github.com/dcyfr, and it mirrors the positioning, copy and figures on [cyberdrew.dev](https://www.cyberdrew.dev). When the site's content model (`lib/site.ts` in `dcyfr/cyberdrew-dev`) changes, this README is the other place that has to move.
 
 ## Working Rules
 
