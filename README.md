@@ -69,5 +69,3 @@ I work with teams putting agents into production. That usually looks like one of
 [**Book an intro call**](https://cal.com/dcyfr/intro) · [hello@cyberdrew.dev](mailto:hello@cyberdrew.dev) · [LinkedIn](https://www.linkedin.com/in/dcyfr/) · [X](https://x.com/dcyfr_)
 
 For security disclosures: **security@dcyfr.ai** (see the [DCYFR Labs security policy](https://github.com/dcyfr-labs/dcyfr-ai/blob/main/SECURITY.md)).
-
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dcyfr/dcyfr)
