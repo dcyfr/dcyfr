@@ -4,7 +4,7 @@
   tlp_clearance: GREEN
   status: active
   name: dcyfr
-  last_validated: 2026-08-01
+  last_validated: 2026-11-17
 -->
 
 > **Agents that act. Rails that hold.**
@@ -21,6 +21,8 @@ Founder at [**DCYFR Labs**](https://github.com/dcyfr-labs) · Head of AI at [**G
 
 - [**`@dcyfr/ai`**](https://github.com/dcyfr-labs/dcyfr-ai) `open source` <br> The portable TypeScript runtime the fleet thinks in: model routing across local and frontier tiers, tool-use, and MCP wiring you drop into an existing project.
 - [**The agentic fleet**](https://www.dcyfr.ai/about) `running` <br> Sixty-odd daemons on a shared substrate, spanning research, code review, monitoring, and self-healing. They run autonomously on a local-first model stack under a hard budget.
+- [**`cache-invariants`**](https://github.com/dcyfr-labs/cache-invariants) `open source` <br> Finds the code that silently breaks LLM prompt caching: a linter for agent code and an audit that replays real call logs.
+- [**`spend-gate`**](https://github.com/dcyfr-labs/spend-gate) `open source` <br> A budget trip for autonomous agents. When spend crosses a threshold, every paid call that checks the gate stops, and the trip survives a Redis outage or restart.
 - [**SharkVault**](https://sharkvault.gamesharklabs.com) `live` <br> Proof the fleet ships product and not just diffs: a backer-funded consumer app taken end to end, from auth to payments to content pipeline, largely by agents.
 
 Starter templates for [agents](https://github.com/dcyfr-labs/dcyfr-ai-agents), [APIs](https://github.com/dcyfr-labs/dcyfr-ai-api), [GraphQL](https://github.com/dcyfr-labs/dcyfr-ai-graphql), [React](https://github.com/dcyfr-labs/dcyfr-ai-react), [chatbots](https://github.com/dcyfr-labs/dcyfr-ai-chatbot), [CLIs](https://github.com/dcyfr-labs/dcyfr-ai-cli), and [Node.js](https://github.com/dcyfr-labs/dcyfr-ai-nodejs) live in the [DCYFR Labs org](https://github.com/dcyfr-labs), which holds the canonical repo catalog.
@@ -43,12 +45,31 @@ Autonomy is a claim about what happens when nobody is watching. These are the co
 
 | Control | What it means |
 | --- | --- |
-| **Spend ceiling** (`enforced`) | A hard monthly ceiling on model spend, sized to the deployment. Trip it and the kill switch fires. |
+| **Spend ceiling** (`enforced`) | A hard monthly ceiling on model spend, sized to the deployment. Trip it and the kill switch fires. The pattern is published as [`spend-gate`](https://github.com/dcyfr-labs/spend-gate). |
 | **Sender kill switch** (`< 1 s`) | Every outbound path (mail, chat, webhooks) honours one pause flag. |
 | **Credential isolation** (`per-process`) | Secrets resolve at exec time from the OS keychain. Nothing lands in an environment dump, a plist, or a prompt. |
 | **Tool sandbox** (`allowlist`) | The shell an agent gets is not your shell: fixed binaries, no metacharacters, no SSRF to localhost or private ranges. |
 | **Metacognition breaker** (`6 cycles`) | An agent that keeps picking the same task without shipping is quarantined. |
 | **Self-heal watchdog** (`3 / hr`) | Downed services restart on graduated trust. Dry-run first, and never more than three times an hour before escalation. |
+
+## Upstream
+
+When something I depend on is broken, the fix goes back to the project. This list is rebuilt weekly from GitHub search by [`scripts/upstream-ledger.mjs`](scripts/upstream-ledger.mjs). It shows merged and open pull requests only.
+
+<!-- upstream-ledger:start -->
+2 merged and 6 open across 6 projects in the last 12 months.
+
+| Project | Pull request | Status |
+| --- | --- | --- |
+| [batocera-linux/batocera.linux](https://github.com/batocera-linux/batocera.linux) | [#16444](https://github.com/batocera-linux/batocera.linux/pull/16444) rk3568: restore the Rockchip GMAC (stmmac) driver in the kernel config | merged 2026-09-12 |
+| [batocera-linux/batocera.linux](https://github.com/batocera-linux/batocera.linux) | [#16445](https://github.com/batocera-linux/batocera.linux/pull/16445) rk3568: fix ODROID-M1S Ethernet by naming the RTL8211F by PHY ID | merged 2026-09-12 |
+| [Clownacy/clown68000](https://github.com/Clownacy/clown68000) | [#5](https://github.com/Clownacy/clown68000/pull/5) Give ADDQ and SUBQ a defined source address mode | open since 2026-10-08 |
+| [Clownacy/clownmdemu-libretro](https://github.com/Clownacy/clownmdemu-libretro) | [#2](https://github.com/Clownacy/clownmdemu-libretro/pull/2) Export only the libretro API from the unix build | open since 2026-10-08 |
+| [libretro/supafaust](https://github.com/libretro/supafaust) | [#35](https://github.com/libretro/supafaust/pull/35) libretro: expose work RAM as RETRO_MEMORY_SYSTEM_RAM | open since 2026-10-08 |
+| [libretro/supafaust](https://github.com/libretro/supafaust) | [#36](https://github.com/libretro/supafaust/pull/36) libretro: accept every cheat format, and apply RAM-write cheats | open since 2026-10-08 |
+| [anthropics/claude-code-security-review](https://github.com/anthropics/claude-code-security-review) | [#128](https://github.com/anthropics/claude-code-security-review/pull/128) fix: use configured model in validate_api_access instead of retired claude-3-5-haiku | open since 2026-08-29 |
+| [drcursor/HushScribe](https://github.com/drcursor/HushScribe) | [#5](https://github.com/drcursor/HushScribe/pull/5) Surface system-audio capture failures instead of swallowing them | open since 2026-08-27 |
+<!-- upstream-ledger:end -->
 
 ## Writing
 
@@ -61,6 +82,10 @@ Notes from the build live at [**dcyfr.ai/blog**](https://www.dcyfr.ai/blog): age
 **CompTIA** · `SecurityX` Advanced Security Practitioner (CASP+)
 
 [25 verified on Credly](https://www.credly.com/users/dcyfr/badges).
+
+## Sponsor
+
+[**GitHub Sponsors**](https://github.com/sponsors/dcyfr) pays for the open-source work on this page and the upstream fixes above. Tiers start at $5 a month, and every sponsor gets a monthly build note: what shipped, what broke, what's next.
 
 ## Work with me
 
