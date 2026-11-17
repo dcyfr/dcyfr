@@ -1,0 +1,57 @@
+# Weekly refresh of the "Upstream" block in README.md.
+# scripts/upstream-ledger.mjs rebuilds the block from GitHub search; this job
+# commits the result when it changed. The commit step refuses any diff that
+# touches a file other than README.md.
+
+name: upstream ledger
+
+on:
+  schedule:
+    - cron: '23 15 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: upstream-ledger
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '24'
+
+      - name: Test the ledger script
+        run: node --test "scripts/*.test.mjs"
+
+      - name: Rebuild the block
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/upstream-ledger.mjs --readme README.md
+
+      - name: Commit when the block changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No change." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          changed=$(git diff --name-only)
+          if [ "$changed" != "README.md" ]; then
+            echo "Unexpected files changed: $changed" >&2
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -am "docs(readme): refresh the upstream ledger"
+          git push
+          echo "Ledger updated." >> "$GITHUB_STEP_SUMMARY"
