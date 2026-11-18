@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Personal/brand hub for the `dcyfr` GitHub presence. This repo is documentation-first: `README.md` is the GitHub profile page rendered at github.com/dcyfr, and it mirrors the positioning, copy and figures on [cyberdrew.dev](https://www.cyberdrew.dev). When the site's content model (`lib/site.ts` in `dcyfr/cyberdrew-dev`) changes, this README is the other place that has to move.
+Personal/brand hub for the `dcyfr` GitHub presence. This repo is documentation-first: `README.md` is the GitHub profile page rendered at github.com/dcyfr, and it shares its positioning with [cyberdrew.dev](https://www.cyberdrew.dev) without mirroring it: sections such as Upstream and Sponsor exist only here. Keep the facts both pages state in agreement (roles, figures, and the availability note under "Work with me", which follows `contact.note` in `lib/site.ts` of `dcyfr/cyberdrew-dev`).
 
 ## Working Rules
 

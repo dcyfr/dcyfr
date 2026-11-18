@@ -91,6 +91,8 @@ Notes from the build live at [**dcyfr.ai/blog**](https://www.dcyfr.ai/blog): age
 
 I work with teams putting agents into production. That usually looks like one of three things: your first secure agent, a governed fleet, or a hard look at what you already run.
 
+I'm not taking paid engagements right now, and advice is pro bono.
+
 [**Book an intro call**](https://cal.com/dcyfr/intro) · [hello@cyberdrew.dev](mailto:hello@cyberdrew.dev) · [LinkedIn](https://www.linkedin.com/in/dcyfr/) · [X](https://x.com/dcyfr_)
 
 For security disclosures: **security@dcyfr.ai** (see the [DCYFR Labs security policy](https://github.com/dcyfr-labs/dcyfr-ai/blob/main/SECURITY.md)).
