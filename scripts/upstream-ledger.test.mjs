@@ -5,7 +5,10 @@ import {
   END,
   buildQuery,
   escapeCell,
+  lastMonth,
+  monthSections,
   render,
+  renderNote,
   search,
   sinceDate,
   splice,
@@ -110,4 +113,54 @@ test('search returns the items of a complete single page', async () => {
     fetchImpl: reply(200, { total_count: 1, incomplete_results: false, items: [item()] }),
   });
   assert.equal(items.length, 1);
+});
+
+const noteRows = () =>
+  toRows([
+    item({ number: 1, state: 'closed', pull_request: { merged_at: '2026-11-05T00:00:00Z' } }),
+    item({ number: 2, state: 'closed', pull_request: { merged_at: '2026-10-30T00:00:00Z' } }),
+    item({ number: 3, created_at: '2026-11-09T00:00:00Z' }),
+    item({ number: 4, created_at: '2026-08-01T00:00:00Z' }),
+    item({ number: 5, created_at: '2026-12-02T00:00:00Z' }),
+  ]);
+
+test('lastMonth crosses a year boundary', () => {
+  assert.equal(lastMonth(new Date('2026-12-01T00:10:00Z')), '2026-11');
+  assert.equal(lastMonth(new Date('2027-01-15T00:00:00Z')), '2026-12');
+});
+
+test('monthSections sorts by month and leaves later activity out', () => {
+  const s = monthSections(noteRows(), '2026-11');
+  assert.deepEqual(s.merged.map((r) => r.number), [1]);
+  assert.deepEqual(s.opened.map((r) => r.number), [3]);
+  assert.deepEqual(s.carried.map((r) => r.number), [4]);
+  assert.throws(() => monthSections([], '2026-13'), /YYYY-MM/);
+  assert.throws(() => monthSections([], 'November'), /YYYY-MM/);
+});
+
+test('renderNote lists each group and skips empty ones', () => {
+  assert.equal(
+    renderNote(noteRows(), '2026-11'),
+    [
+      '# Upstream build note: November 2026',
+      '',
+      '1 merged, 1 opened and 1 still in review from earlier months.',
+      '',
+      '## Merged',
+      '',
+      '- [acme/widget#1](https://github.com/acme/widget/pull/7) Fix the widget (merged 2026-11-05)',
+      '',
+      '## Opened',
+      '',
+      '- [acme/widget#3](https://github.com/acme/widget/pull/7) Fix the widget (opened 2026-11-09)',
+      '',
+      '## Still in review',
+      '',
+      '- [acme/widget#4](https://github.com/acme/widget/pull/7) Fix the widget (open since 2026-08-01)',
+    ].join('\n'),
+  );
+  assert.equal(
+    renderNote([], '2026-02'),
+    '# Upstream build note: February 2026\n\n0 merged, 0 opened and 0 still in review from earlier months.',
+  );
 });
