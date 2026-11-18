@@ -8,6 +8,8 @@
 // Usage:
 //   node scripts/upstream-ledger.mjs --readme README.md   rewrite the block
 //   node scripts/upstream-ledger.mjs --print              print the block only
+//   node scripts/upstream-ledger.mjs --note [YYYY-MM]     print one month's build
+//                                                         note (default: last month)
 //
 // Environment:
 //   GITHUB_TOKEN     optional; raises the search rate limit
@@ -88,6 +90,47 @@ export function render(rows, { months }) {
   return lines.join('\n');
 }
 
+export function lastMonth(now) {
+  return new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - 1, 1)).toISOString().slice(0, 7);
+}
+
+// Sorts a month's rows into what merged, what was opened and is still open, and
+// what was already open before the month began. Later activity is left out, so
+// a past month reads the same whenever it is rebuilt, except that a pull request
+// merged since then moves out of the open groups.
+export function monthSections(rows, month) {
+  if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(month)) throw new Error(`month must be YYYY-MM, got: ${month}`);
+  const of = (r) => r.date.slice(0, 7);
+  return {
+    merged: rows.filter((r) => r.status === 'merged' && of(r) === month),
+    opened: rows.filter((r) => r.status === 'open' && of(r) === month),
+    carried: rows.filter((r) => r.status === 'open' && of(r) < month),
+  };
+}
+
+export function renderNote(rows, month) {
+  const { merged, opened, carried } = monthSections(rows, month);
+  const label = new Date(`${month}-01T00:00:00Z`).toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+  const lines = [
+    `# Upstream build note: ${label}`,
+    '',
+    `${merged.length} merged, ${opened.length} opened and ${carried.length} still in review from earlier months.`,
+  ];
+  const section = (title, list, when) => {
+    if (list.length === 0) return;
+    lines.push('', `## ${title}`, '');
+    for (const r of list) lines.push(`- [${r.repo}#${r.number}](${r.url}) ${escapeCell(r.title)} (${when} ${r.date})`);
+  };
+  section('Merged', merged, 'merged');
+  section('Opened', opened, 'opened');
+  section('Still in review', carried, 'open since');
+  return lines.join('\n');
+}
+
 export function splice(readme, block) {
   const a = readme.indexOf(START);
   const b = readme.indexOf(END);
@@ -119,7 +162,9 @@ async function main(argv) {
   const print = argv.includes('--print');
   const at = argv.indexOf('--readme');
   const readmePath = at === -1 ? null : argv[at + 1];
-  if (!print && !readmePath) throw new Error('pass --readme <path> or --print');
+  const noteAt = argv.indexOf('--note');
+  const note = noteAt !== -1;
+  if (!print && !readmePath && !note) throw new Error('pass --readme <path>, --print or --note [YYYY-MM]');
 
   const months = Number(process.env.LEDGER_MONTHS ?? 12);
   if (!Number.isInteger(months) || months < 1) throw new Error('LEDGER_MONTHS must be a positive integer');
@@ -134,6 +179,12 @@ async function main(argv) {
 
   const query = buildQuery({ author, exclude, since: sinceDate(new Date(), months) });
   const items = await search(query, { token: process.env.GITHUB_TOKEN });
+  if (note) {
+    const given = argv[noteAt + 1];
+    const month = given && !given.startsWith('--') ? given : lastMonth(new Date());
+    console.log(renderNote(toRows(items), month));
+    return;
+  }
   const block = render(toRows(items), { months });
 
   if (print) {

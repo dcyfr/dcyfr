@@ -14,6 +14,8 @@ Personal/brand hub for the `dcyfr` GitHub presence. This repo is documentation-f
 
 The table between the `upstream-ledger` markers in `README.md` is generated. Do not edit it by hand: `scripts/upstream-ledger.mjs` rebuilds it from GitHub search, and `.github/workflows/upstream-ledger.yml` commits the result every Monday. To refresh it locally, run `node scripts/upstream-ledger.mjs --readme README.md`. Tests: `node --test "scripts/*.test.mjs"`.
 
+The same script prints a monthly build note: `node scripts/upstream-ledger.mjs --note [YYYY-MM]` (default: last month). It writes nothing and is not scheduled.
+
 ## Validation
 
 - Re-read `README.md` after edits to keep package names, links, and ecosystem descriptions consistent.
